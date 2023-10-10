@@ -6,7 +6,11 @@ const Navbar = ({ htmlForValue }) => {
     <div className="navbar bg-base-200">
       <div className="navbar-start">
         <div className="dropdown">
-          <label htmlFor={htmlForValue} tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label
+            htmlFor={htmlForValue}
+            tabIndex={0}
+            className="btn btn-ghost lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -22,14 +26,14 @@ const Navbar = ({ htmlForValue }) => {
               />
             </svg>
           </label>
-          
         </div>
         <a className="btn btn-ghost normal-case text-xl">Markdowntoday Guide</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
-      </div>
+      <div className="navbar-center hidden lg:flex"></div>
       <div className="navbar-end">
-        <Link className="btn">Go to Dashboard</Link>
+        <a className="btn" href="https://ap.markdowntoday.com/admin">
+          Go to Dashboard
+        </a>
       </div>
     </div>
   );
